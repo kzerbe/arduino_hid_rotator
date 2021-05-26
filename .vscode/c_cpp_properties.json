@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/kzerbe/arduino/arduino-nightly/tools/**",
+                "/home/kzerbe/Arduino/libraries/**",
+                "/home/kzerbe/arduino/arduino-nightly/libraries/**",
+                "/home/kzerbe/arduino/arduino-nightly/hardware/tools/**",
+                "/home/kzerbe/arduino/arduino-nightly/hardware/arduino/avr/**"
+            ],
+            "forcedInclude": [
+                "/home/kzerbe/arduino/arduino-nightly/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "defines": [
+                "USBCON"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
