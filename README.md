@@ -94,3 +94,33 @@ An die Schließkontakte kann die Anode bzw. der Vorwiderstand einer LED angeschl
 | GND | Kontakt |
 | RST | Schließkontakt |
 
+
+## Software
+Die Software für den Pro Micro habe ich in meinem [GitHub Repository](https://github.com/kzerbe/arduino_hid_rotator) abgelegt. Mit dem Bibliotheksverwalter ist lediglich noch die bereit erwähnte Bibliothek **U8g2** zu installieren, alle sonstigen Bibliotheken sind in der Arduino Software bereits enthalten.
+
+Der Projektcode besteht aus folgenden Dateien im  Unterverzeichnis *poll*:
+
+| Datei | Beschreibung |
+|----|----|
+| poll.ino | der Arduino-Sketch der Anwendung |
+| Rotary.h | C++ Headerdatei der Drehwinkelgeber Hilfsklasse |
+| Rotary.cpp | C++ Hilfsklasse für den Drehwinkelgeber |
+
+Für das Verständis der Anwendung ist nur die reichlich kommentierte Sketch-Datei notwendig.
+
+### genereller Aufbau von Sketch - Dateien
+Wie alle Sketche hat sie folgenden Aufbau:
+
+1. Inkludierung aller Bibliotheken bzw. Hilfsklassen-Header (.H -Dateien)
+2. Deklaration benötigter Datenstrukturen (hier nur die Macro-Struktur)
+3. Definition aller Konstanten, globalen Variablen und Klassen-Instanzen (hier für Drehwinkelgeber und Display)
+4. eine Funktion **setup()** die alle noch vor Programmstart nötigen Initialisierungen erledigt
+5. verschiedene Hilfsfunktionen für die Hauptschleife (funktion **loop**)
+6. die vom Hauptprogramm im Bootloader kontinuierlich aufgerufene Hauptschleife **loop*
+
+### häufig verwendete Sketch-Funktionen
+#### pinmode(pin, INPUT|INPUT_PULLUP|OUTPUT)
+legt fest, ob einPin als Eingabe oder Ausgabe dient, bei INPUT_PULLUP spart man einen Widerstand, der einen Eingang auf VCC-Pegel zieht. Ein Schalter gegen GND kann dann den Eingang von einer 1 auf 0 runter ziehen.
+
+
+
