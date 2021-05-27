@@ -26,7 +26,7 @@ Zur Anwendungsprogrammierung kann kostenlos die [Arduino IDE](https://www.arduin
 Der Quelltexteditor ist leider etwas schwach, es können aber externe Editoren - etwa VisualStudio Code verwendet werden - diese beliebte Microsoft-IDE integriert sich sehr gut mit dem Arduino Workflow.
 
 ## Anschlussfreudige Microcontroller Boards
-![file](/uploads/inline_files/image-1622123592959.png)
+![file](https://openkb.zerbe.cloud/uploads/inline_files/image-1622123592959.png)
 Wer Microcontroller-Board Anschlußpläne wie das obige noch nie gesehen hat, fühlt sich vielleicht davon erschlagen. Das ist jedenfalls der Anschlußplan für den in diesem Projekt verwendeten [Arduino Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/hardware-overview-pro-micro), der vom Hersteller Sparkfun (siehe Link) und vielen - meist asiatischen - "Nachbauern"  vertrieben wird.
 
 Was gleich auffällt, ist die Mehrfachbelegung der Anschlüsse. Was vielleicht jemand - der sich schon mal mit Mikroprozessoren beschäftigt hat - vermisst, sind Address- und Datenbusse. Bei Mikroprozessoren und den meisten SoCs wie sie auch in PCs zu finden sind, liegt zumindest der Arbeitsspeicher außerhalb des Prozessors, was zu vielen Anschlußleitungen und komplizierten, mehrlagigen Mainboards führt. Mikrocontroller brauchen für ihre Aufgabe meist nur wenig Speicher und der ist fest eingebaut und nicht erweiterbar. Sie vermeiden weiterhin viele Anschlüsse durch möglichst flexibel programmierbare Mehrfachbelegung von diesen. 
@@ -44,7 +44,7 @@ Das Display wird benötigt um das aktuell auszuführende Makro anzuzeigen. Mit e
 
 ### Drehwinkelgeber mit integriertem Taster (KY-40)
 
-![file](/uploads/inline_files/image-1622129966593.jpg)
+![file](https://openkb.zerbe.cloud/uploads/inline_files/image-1622129966593.jpg)
 
 Ein Drehwinkelgeber enthält zwei in Drehrichtung angebrachte Schalter (A-C und B-C). Je nach Drehrichtung schaltet erst die A-C Verbindung oder die B-C Verbindung. **GND ** und **+**  (VCC 5V) liefern die Stromversorgung (für lediglich 2 Pullup-Widerstände), DT und CLK werden an Digitaleingänge des Arduinos angeschlossen, damit per Software Drehrichtung - und - Winkel bestimmt werden können. SW liefert an einen weiteren Digitaleingang den Zustand des Tasters, der durch Drücken des Drehknops betätigt wird.
 
