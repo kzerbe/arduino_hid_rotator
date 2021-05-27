@@ -1,4 +1,4 @@
-D
+
 # Arduino HID Rotator
 
 ieser Artikel zeigt, wie man mit einem preiswerten Microcontroller zu den meisten Endgeräten (PC, Tablet, Smartphone, Spielkonsole) kompatible Eingabegeräte (HIDs) selbst bauen kann, ohne dass dort Treiber installiert werden müssen. Ich möchte hier alles Wissen vermitteln (oder zumindest verlinken), welches man zum Aufbau und Programmierung solcher HIDs - die Maus, Tastatur oder Gamepad ersetzen können - braucht.  Schwerpunkt  ist dabei Automatisierung mittels "Makros", welche komplexe Eingabefolgen - die man aus einem Menü auswählen kann - an ein Endgerät sendet. Mehrere solcher HIDs kann man parallel zu den bereits vorhandenen (wie Tastatur und Maus) betreiben, indem man sie einfach an einen freien USB-Port steckt.
